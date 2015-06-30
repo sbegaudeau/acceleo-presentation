@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>Acceleo - And you tought you knew template based code generators?</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -32,347 +32,464 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
+
+		<style>
+		.reveal section img {
+      border: 1px solid #222;
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+    }
+		.reveal section .borderless {
+      border: 0px solid #fff;
+      box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+    }
+		</style>
 	</head>
 
 	<body>
 
 		<div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
+					<h1>Acceleo</h1>
+					<h3>And you thought you knew template based code generators?</h3>
 					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+						<small>Created by <a href="https://plus.google.com/105625286543794908607/posts">St&eacute;phane B&eacute;gaudeau</a> / <a href="https://twitter.com/sbegaudeau">@sbegaudeau</a></small>
 					</p>
 				</section>
 
 				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
-				</section>
-
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-						</a>
-					</section>
+					<h1>About Me</h1>
+					<p>St&eacute;phane B&eacute;gaudeau</p>
+					<p class="fragment">Software Engineer at Obeo</p>
+					<p class="fragment">Leader of Acceleo</p>
 				</section>
 
 				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-					</p>
+					<h1>Acceleo</h1>
+					<p>Open source code generator</p>
+					<p class="fragment">Can generate any kind of text</p>
+					<p class="fragment">From any kind of models</p>
+					<p class="fragment">Built with the tools of your choice</p>
 				</section>
 
 				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
+					<h1>History</h1>
+					<p>2006 - Birth of Acceleo (GPL)</p>
+					<p>2008 - MOFM2T specification</p>
+					<p>2009 - Eclipse Foundation (EPL)</p>
+					<p>2015 - Acceleo 3.6.0 for Eclipse Mars</p>
 				</section>
 
 				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
+					<h1>Open Project</h1>
+					<p>Git and Gerrit</p>
+					<p>Continuous integration on Hudson</p>
+					<p>Bugzilla</p>
+					<p>Wiki and website</p>
 				</section>
 
 				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
+					<h1>MOFM2T</h1>
+					<p>OMG's standard for model to text transformation</p>
+					<p>Model to Text transformation language (MTL)</p>
+					<p>Parameterized by some metamodels</p>
+					<p>Manipulated with a superset of OCL</p>
+				</section>
 
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
+				<section>
+					<h1>MTL</h1>
+					<p>Implemented in Acceleo</p>
+				</section>
+
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							# Modules
+
+							They are used to structure the generator.
+
+							```
+[module myModule('http://www.eclipse.org/emf/2002/Ecore')]
+							```
+						</script>
 					</section>
 					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
+						<h1>Modules</h1>
+						<p>One module for each kind of file to be generated</p>
+						<img data-src="images/module.png" class="borderless">
 					</section>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
+					<section>
+						<h1>Imports</h1>
+						<p>A module can import other modules</p>
+						<img data-src="images/module-imports.png" class="borderless">
+					</section>
+					<section>
+						<h1>Extends</h1>
+						<p>Modules can be extended and templates overridden</p>
+						<img data-src="images/module-extends.png" class="borderless">
+					</section>
+					<section>
+						<h1>Dynamic Overriding</h1>
+						<p>Once your generator has been built and deliver to your customers, you can still patch it with another generator which would override part of an existing one</p>
+					</section>
 				</section>
 
 				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-						</div>
-					</section>
-					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
-						<h2>... and GIFs!</h2>
-					</section>
-				</section>
+					<section data-markdown>
+						<script type="text/template">
+							# Templates
 
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code>Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
+							They are used to generate the content of the files.
 
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
+							```
+[template private genClassBody(aClass : Class)]
+[aClass.declaration()/] {
+  [aClass.attributes()/]
+  [aClass.constructor()/]
+  [aClass.operations()/]
+[for (aProperty : Property | aClass.ownedAttribute)]
+  [aProperty.accessors()/]
+[/for]
 }
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
+[/template]
+							```
+						</script>
+					</section>
+					<section>
+						<h1>Templates</h1>
+						<p>Can contain static parts in black and dynamic parts in blue, computed from the input model</p>
+						<img data-src="images/template.png" class="borderless">
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							# Templates
+
+							Can have a conditional execution
+
+							```
+[template private genAbstractClass(c : Class) ? (c.isAbstract)]
+...
+[/template]
+							```
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							# Templates
+
+							Can initialize some variables
+
+							```
+[template private genAbstractClass(c : Class) {n: String = c.name;}]
+[n/]
+[/template]
+							```
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							# Templates
+
+							Can have an expression to run afterwards
+
+							```
+[template private genAbstractClass(c : Class) post(trim())]
+...
+[/template]
+							```
+						</script>
+					</section>
+					<section>
+						<h1>Templates</h1>
+						<p>Or all of them simultaneously</p>
+						<img data-src="images/template-simultaneously.png">
+					</section>
 				</section>
 
 				<section>
-					<h2>Marvelous List</h2>
+					<section data-markdown>
+						<script type="text/template">
+							# Blocks
+
+							Various blocks are can be used inside a template: for, if, let
+
+							```
+[template private genClass(c : Class)]
+  [let (n: String = c.name)][n/][/let]
+
+  [for (aProperty : Property | aClass.ownedAttribute)]
+    [if (aProperty.isStatic)]static[/if]
+  [/for]
+[/template]
+							```
+						</script>
+					</section>
+					<section>
+						<h1>Variables</h1>
+						<p>They are read only, you can't modify them!</p>
+					</section>
+					<section>
+						<h1>File</h1>
+						<p>This block is used to create a file</p>
+						<img data-src="images/template-file.png">
+					</section>
+				</section>
+
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							# Queries
+
+							Encapsulate an OCL expression
+
+							```
+[query public sayHello(name: String) : String = 'Hello ' + name/]
+							```
+						</script>
+					</section>
+					<section>
+						<h1>Queries</h1>
+						<p>Will have their result stored in a cache</p>
+					</section>
+					<section>
+						<h1>Queries</h1>
+						<p>Mostly used to call Java services</p>
+						<img data-src="images/query-java.png">
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Code Generation</h1>
+						<p>Acceleo can generate any kind of text: JavaScript, Java, C#, Swift, XML, etc</p>
+					</section>
+					<section>
+						<h1>Generation Strategy</h1>
+						<p>Acceleo writes your generated content on the filesystem by default, you can change what happens with it (send it to a HTTP server for example)</p>
+					</section>
+				</section>
+
+				<section>
+					<h1>Acceleo and OCL</h1>
+					<p>Object Constraint Language</p>
+					<p>MDT OCL: Implementation for EMF-based models</p>
+					<p>Used in Acceleo since Eclipse 3.4</p>
+				</section>
+
+				<section>
+					<h1>Acceleo and EMF</h1>
+					<p>Eclipse Modeling Framework</p>
+					<p>You can configure some parts (metamodel registration, model loading, resource factories, etc)</p>
+				</section>
+
+				<section>
+					<h1>Acceleo and UML</h1>
+					<p>Fully compatible with the MDT UML project</p>
+					<p>EMF based implementation of the UML metamodel</p>
+				</section>
+
+				<section>
+					<h1>Models</h1>
+					<p>Acceleo is compatible with EMF models, regardless of the way they have been created</p>
+					<p>Xtext, UML Designer, Papyrus, EMF Forms, EMF tree-based editor, etc...</p>
+				</section>
+
+				<section>
+					<h1>Acceleo</h1>
+					<p>Standard library: OCL, MTL and EMF</p>
+					<p>Non standard library: filter, trim, invoke, addAll etc</p>
+					<p>Strict compilation mode available</p>
+				</section>
+
+				<section>
+					<h1>Tooling and Features</h1>
+				</section>
+
+				<section>
+					<h1>Acceleo Perspective</h1>
+					<img data-src="images/perspective.png" class="borderless">
+				</section>
+
+				<section>
+					<section>
+						<h1>Wizards</h1>
+						<p>Create new Acceleo project or a basic UI for your generator</p>
+						<img data-src="images/wizard.png" class="borderless">
+					</section>
+					<section>
+						<h1>Wizards</h1>
+						<p>Initialize your generator with your metamodels</p>
+						<img data-src="images/wizard-metamodel.png" class="borderless">
+					</section>
+					<section>
+						<h1>Wizards</h1>
+						<p>Initialize your generator with an existing sample</p>
+						<img data-src="images/wizard-initialization.png" class="borderless">
+					</section>
+				</section>
+
+				<section>
+					<h1>Syntax Highlighting</h1>
+					<p>You can change the settings of the syntax highlighting thanks to the Acceleo preferences</p>
+					<img data-src="images/syntax-highlighting.png">
+				</section>
+
+				<section>
+					<h1>Quick Replacement</h1>
+					<p>Replace all the occurrences of a piece of static text in a module with an expression</p>
+					<img data-src="images/quick-replacement.png" class="borderless">
+				</section>
+
+				<section>
+					<h1>Refactoring</h1>
+					<p>Rename a template or a query and all its occurrences</p>
+					<img data-src="images/refactoring.png" class="borderless">
+				</section>
+
+				<section>
+					<section>
+						<h1>Code Completion</h1>
+						<p>Find all the structural features of an EObject</p>
+						<img data-src="images/code-completion-features.png">
+					</section>
+					<section>
+						<h1>Code Completion</h1>
+						<p>Find all the templates and queries that can be called</p>
+						<img data-src="images/code-completion-acceleo.png">
+					</section>
+					<section>
+						<h1>Code Complation</h1>
+						<p>Find all the EOperations and EMF operations</p>
+						<img data-src="images/code-completion-eoperations.png">
+					</section>
+				</section>
+
+				<section>
+					<h1>Debug</h1>
+					<p>Use breakpoints to stop the generator and have a look at the state of your variables</p>
+				</section>
+
+				<section>
+					<section>
+						<h1>Interpreter</h1>
+						<p>Run Acceleo expressions against a model</p>
+						<img data-src="images/interpreter.png" class="borderless">
+					</section>
+					<section>
+						<h1>Interpreter</h1>
+						<p>Store variables in the interpreter</p>
+						<img data-src="images/interpreter-variables.png" class="borderless">
+					</section>
+					<section>
+						<h1>Interpreter</h1>
+						<p>Write complete templates</p>
+						<img data-src="images/interpreter-template.png" class="borderless">
+					</section>
+					<section>
+						<h1>Interpreter</h1>
+						<p>And see the result</p>
+						<img data-src="images/interpreter-template-result.png" class="borderless">
+					</section>
+					<section>
+						<h1>Interpreter</h1>
+						<p>You can also contribute your own language to the Acceleo interpreter and reuse it outside of Acceleo</p>
+					</section>
+				</section>
+
+				<section>
+					<h1>Sirius Integration</h1>
+					<p>You can use Acceleo directly in Eclipse Sirius to build your designer</p>
+				</section>
+
+				<section>
+					<h1>Build</h1>
+					<p>Build your Acceleo generator using Maven. Integrates nicely with Eclipse Tycho.</p>
+					<img data-src="images/maven.png">
+				</section>
+
+				<section>
+					<section>
+						<h1>Incremental Generation</h1>
+						<p>Use protected blocks to define parts of the generated code where the user can safely modify anything</p>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							# Incremental Generation
+
+							Define a protected area with an unique identifier
+
+							```
+[template private genClass(c : Class)]
+public void doStuff() {
+	// [protected(c.name)]
+	// TO BE MODIFIED
+	// [/protected]
+}
+[/template]
+							```
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							# Incremental Generation
+
+							The content generated defines a protected area
+
+							```
+public void doStuff() {
+	// start of user code MyClass
+	// TO BE MODIFIED
+	// ends of user code
+}
+							```
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							# Incremental Generation
+
+							You can always modify the generated content but you will lose everything outside of the protected areas
+
+							```
+public void doStuff() {
+	// This code will be lost by the next generation
+
+	// start of user code MyClass
+	// This code will be saved
+	// ends of user code
+}
+							```
+						</script>
+					</section>
+					<section>
+						<h1>Lost Files</h1>
+						<p>If you remove a protected area from your generator, we will create a .lost file with your content</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Stand Alone</h1>
+						<p>You can build and run your generator out of Eclipse</p>
+					</section>
+					<section>
+						<h1>Stand Alone</h1>
+						<p>You need to register by yourself your metamodels, resource factories, UML profiles, etc.</p>
+					</section>
+				</section>
+
+				<section>
+					<h1>For more information</h1>
 					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
+						<li><a href="https://www.eclipse.org/acceleo">www.eclipse.org/acceleo</a></li>
+						<li><a href="https://wiki.eclipse.org/acceleo">wiki.eclipse.org/acceleo</a></li>
 					</ul>
 				</section>
 
 				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							<tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							<tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							<tr>
-						</tbody>
-					</table>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="//www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-				</section>
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
-				</section>
-
-				<section>
-					<h2>Much more</h2>
-					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
-					</ul>
-				</section>
-
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
+					<h1>Thanks!</h1>
+					<p>Any questions?</p>
 				</section>
 
 			</div>
